@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Consulting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="nav-menu-mob">
+        <div class="nav-menu-top">
+            <div class="header__top__search">
+                <img src="./img/icons/search.svg" alt="search">
+                <input type="text" placeholder="Поис1к">
+            </div>
+            <div class="header__top__join">
+                <img src="./img/icons/join.svg" alt="join">
+                <span>Войти</span>
+            </div>
+        </div>
+        <div class="nav-menu-main">
+            <a href="index.html">Главная</a>
+            <a href="projects.html">Проекты</a>
+            <a href="about.html">О нас</a>
+            <a href="uslugi.html">Услуги</a>
+            <a href="documents.html">Документы</a>
+            <a href="news.html">Новости</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+        <div class="nav-menu-contacts">
+            <a href="tel:+7 (495) 223-70-51">+7 (495) 223-70-51</a>
+            <a href="mailto:info@safety-consult.ru">info@safety-consult.ru</a>
+        </div>
+
+
+    </div>
+    <div class="preloader">
+        <svg width="162" height="162" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M143.093 68.8283L151.301 69.6516C154.55 69.9746 157.001 72.6853 157.001 75.947V86.0486C157.001 89.3167 154.55 92.0273 151.301 92.363L143.093 93.1863C142.542 96.03 141.801 98.823 140.876 101.521L147.564 106.328C150.211 108.234 150.984 111.806 149.35 114.637L144.302 123.384C142.675 126.215 139.191 127.329 136.215 125.993L128.722 122.611C126.829 124.783 124.777 126.835 122.604 128.729L125.986 136.215C127.329 139.192 126.202 142.669 123.377 144.303L114.631 149.35C111.787 150.978 108.228 150.212 106.321 147.564L101.514 140.876C98.8164 141.795 96.0234 142.542 93.1798 143.093L92.3564 151.301C92.0334 154.55 89.3228 157.001 86.0548 157.001H75.9531C72.6851 157.001 69.9744 154.55 69.6388 151.301L68.8154 143.093C65.9718 142.542 63.1788 141.801 60.4808 140.876L55.6738 147.564C53.7738 150.218 50.2018 150.991 47.3644 149.35L38.6181 144.303C35.7934 142.669 34.6724 139.192 36.0088 136.215L39.3908 128.723C37.2184 126.829 35.1664 124.777 33.2728 122.605L25.7868 125.987C22.8164 127.336 19.3331 126.208 17.6991 123.377L12.6514 114.631C11.0174 111.8 11.7901 108.228 14.4374 106.322L21.1254 101.515C20.2071 98.8167 19.4598 96.0237 18.9088 93.18L10.7008 92.3566C7.45176 92.0336 5.00076 89.323 5.00076 86.055V75.9533C5.00076 72.6853 7.45176 69.9746 10.7071 69.6453L18.9151 68.822C19.4661 65.9783 20.2071 63.1853 21.1318 60.4873L14.4438 55.6803C11.7964 53.7803 11.0238 50.2083 12.6578 47.371L17.7054 38.631C19.3394 35.8 22.8164 34.679 25.7931 36.0153L33.2854 39.4036C35.1791 37.225 37.2248 35.1793 39.4034 33.2856L36.0214 25.7996C34.6788 22.8166 35.7998 19.3396 38.6308 17.7056L47.3708 12.658C50.2081 11.024 53.7801 11.7966 55.6801 14.444L60.4871 21.1256C63.1851 20.2073 65.9781 19.46 68.8218 18.909L69.6451 10.701C69.9681 7.45198 72.6788 5.00098 75.9468 5.00098H86.0484C89.3164 5.00098 92.0271 7.45198 92.3564 10.7073L93.1798 18.9153C96.0234 19.4663 98.8164 20.2073 101.514 21.132L106.321 14.444C108.228 11.7966 111.793 11.024 114.631 12.658L123.377 17.7056C126.202 19.3396 127.323 22.8166 125.986 25.7933L122.604 33.2856C124.777 35.1793 126.829 37.2313 128.722 39.4036L136.208 36.0216C139.191 34.6853 142.668 35.8063 144.296 38.631L149.35 47.3773C150.984 50.2083 150.211 53.7803 147.564 55.6866L140.876 60.4936C141.794 63.1916 142.542 65.9846 143.093 68.8283Z" fill="#11D170"/>
+            
+            <path class="path-anim" d="M75.4575 128.468L94.3586 135.254C94.7509 135.395 95.178 135.186 95.3126 134.789C95.3614 134.646 95.3664 134.49 95.3271 134.342L93.5454 127.693C104.562 124.239 107.656 111.384 105.613 103.182L105.603 103.145C105.494 102.738 105.081 102.495 104.681 102.602C104.286 102.708 104.05 103.117 104.151 103.522L104.163 103.564C104.612 105.566 99.2851 116.148 91.1731 118.84L89.4013 112.227C89.2918 111.82 88.8787 111.578 88.4787 111.685C88.3338 111.724 88.2042 111.807 88.1065 111.921L75.1311 127.25C74.8621 127.568 74.8999 128.049 75.2155 128.325C75.2869 128.387 75.3689 128.436 75.4575 128.468Z" fill="white"/>
+            <path class="path-anim" d="M33.5504 75.414L26.7635 94.3152C26.6233 94.7075 26.8316 95.1346 27.2286 95.2692C27.3724 95.3179 27.5281 95.3229 27.6756 95.2836L34.3249 93.502C37.7793 104.519 50.6336 107.612 58.8359 105.57L58.8727 105.56C59.2798 105.451 59.523 105.038 59.4158 104.638C59.3098 104.242 58.9005 104.006 58.4963 104.108L58.4535 104.119C56.4517 104.569 45.8702 99.2417 43.1783 91.1297L49.7908 89.3579C50.1978 89.2483 50.4404 88.8353 50.3328 88.4353C50.2938 88.2904 50.2115 88.1607 50.0965 88.0631L34.7682 75.0877C34.4502 74.8187 33.9688 74.8564 33.6929 75.1721C33.6306 75.2435 33.5822 75.3255 33.5504 75.414Z" fill="white"/>
+            <path class="path-anim" d="M85.6386 33.7658L66.7374 26.9789C66.3452 26.8388 65.918 27.047 65.7835 27.444C65.7347 27.5878 65.7297 27.7435 65.769 27.891L67.5507 34.5403C56.534 37.9947 53.4403 50.849 55.4828 59.0513L55.4927 59.0881C55.6018 59.4953 56.0146 59.7384 56.4147 59.6312C56.8104 59.5253 57.0463 59.1159 56.9448 58.7117L56.9334 58.6689C56.4839 56.6671 61.811 46.0856 69.923 43.3938L71.6947 50.0062C71.8043 50.4132 72.2174 50.6559 72.6174 50.5482C72.7623 50.5093 72.8919 50.4269 72.9896 50.3119L85.965 34.9837C86.234 34.6656 86.1962 34.1842 85.8805 33.9083C85.8092 33.8461 85.7271 33.7977 85.6386 33.7658Z" fill="white"/>
+            <path class="path-anim" d="M128.512 86.5615L135.299 67.6604C135.439 67.2681 135.231 66.841 134.834 66.7064C134.69 66.6576 134.534 66.6526 134.387 66.692L127.737 68.4736C124.283 57.457 111.429 54.3632 103.226 56.4058L103.19 56.4156C102.783 56.5247 102.539 56.9376 102.647 57.3377C102.753 57.7333 103.162 57.9693 103.566 57.8678L103.609 57.8563C105.611 57.4069 116.192 62.7339 118.884 70.8459L112.272 72.6177C111.865 72.7273 111.622 73.1403 111.73 73.5403C111.769 73.6852 111.851 73.8148 111.966 73.9125L127.294 86.8879C127.612 87.1569 128.094 87.1191 128.369 86.8035C128.432 86.7321 128.48 86.6501 128.512 86.5615Z" fill="white"/>
+            </svg>
+        <div class="counter">0</div>
+            
+            
+  </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__top__first">
+                    <div class="header__top__search">
+                        <img src="./img/icons/search.svg" alt="search">
+                        <input type="text" placeholder="Поиск">
+                    </div>
+                    <div class="header__top__join">
+                        <img src="./img/icons/join.svg" alt="join">
+                        <span>Войти</span>
+                    </div>
+                </div>
+                <div class="header__top__last">
+                    <a href="mailto:info@safety-consult.ru" class="email header__last__info">info@safety-consult.ru</a>
+                    <a href="tel:+7 (495) 223-70-51" class="number header__last__info">+7 (495) 223-70-51</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__inner">
+                <a href="index.html" class="logo">
+                    <img src="./img/logo-clear.svg" alt="logo" class="logo-img">
+                    <span>Safety<br>
+                        Consulting</span>
+                    
+                </a>
+                <div class="menu">
+                    <a href="index.html" class="menu__link">Главная</a>
+                    <a href="projects.html" class="menu__link">Проекты</a>
+                    <a href="about.html" class="menu__link">О нас</a>
+                    <a href="uslugi.html" class="menu__link">Услуги </a>
+                    <a href="alldocs.html" class="menu__link">Документы</a>
+                    <a href="news.html" class="menu__link">Новости </a>
+                    <a href="contacts.html" class="menu__link">Контакты</a>                             
+                </div>
+                <div class="mob-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__inner">
+                <div class="banner-bg">
+                    <img src="./img/banner-bg.png" alt="banner">
+                    <img src="./img/bg-header-mob.png" alt="banner">
+                </div>
+                <div class="banner__inner__first">
+                    <div class="banner__inner__text">
+                        <h1>Сократим риски<br>
+                        <span>на производстве</span>
+                    </h1>
+                    <p>Эффективные решения, выбор за вами</p>
+                </div>
+                <a class="block__go" href="#">
+                    <div class="block__go__arrow">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                        </svg>
+                    </div>
+                    <span>Смотреть услуги</span>
+                </a>
+                </div>
+                <div class="banner__inner__last col-5">
+                    <div class="banner__inner__last__block">
+                        <svg width="73" height="78" viewBox="0 0 73 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1.62109" y="39.0276" width="34.4674" height="37.0382" stroke="#686E79" stroke-width="2"/>
+                            <rect x="1.62109" y="1.52051" width="34.4674" height="37.0382" stroke="#DFDFE0" stroke-width="2"/>
+                            <rect x="36.6299" y="1.52051" width="34.4674" height="37.0382" stroke="#DFDFE0" stroke-width="2"/>
+                            <rect x="36.6299" y="39.0273" width="34.4674" height="37.0382" stroke="#DFDFE0" stroke-width="2"/>
+                            <rect class="change__rect" x="18.8555" y="18.1255" width="36.4674" height="39.0382"/>
+                        </svg>
+                            
+                        <p>Управление охраной труда и промышленной безопасностью</p>
+                    </div>
+                    <div class="banner__inner__last__block">
+                        <svg width="75" height="80" viewBox="0 0 75 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="change__rect" x="19.2324" y="19.8906" width="36.4674" height="39.0382"/>
+                            <path d="M1.36426 26.0146V1.52002H73.5698V25.6318" stroke="#DFDFE0" stroke-width="2"/>
+                            <path d="M10.4805 32.9036V14.5327H64.4523V32.6166" stroke="#686E79" stroke-width="2"/>
+                            <path d="M73.5713 53.5709L73.5713 78.0654L1.36575 78.0654L1.36575 53.9536" stroke="#DFDFE0" stroke-width="2"/>
+                            <path d="M64.4531 46.6818L64.4531 65.0527L10.4813 65.0527L10.4813 46.9689" stroke="#686E79" stroke-width="2"/>
+                            </svg>
+                            
+                        <p>Разработка и внедрение нормативных документов в области ОТ и ПБ</p>
+                    </div>
+                    <div class="banner__inner__last__block">
+                        <svg width="75" height="78" viewBox="0 0 75 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="-1" x2="103.615" y2="-1" transform="matrix(0.689208 -0.724564 0.689208 0.724564 1.57227 77.4153)" stroke="#DFDFE0" stroke-width="2"/>
+                            <line y1="-1" x2="103.61" y2="-1" transform="matrix(0.689651 0.724142 -0.689651 0.724142 1.57227 2.39966)" stroke="#DFDFE0" stroke-width="2"/>
+                            <line x1="37.5801" y1="2.39966" x2="37.5801" y2="77.4142" stroke="#686E79" stroke-width="2"/>
+                            <line x1="73.0488" y1="39.3772" x2="1.57263" y2="39.3772" stroke="#686E79" stroke-width="2"/>
+                            <rect class="change__rect" x="19.0762" y="19.24" width="36.4674" height="39.0382"/>
+                            </svg>
+                            
+                        <p>Разработка и внедрение систем управления качеством СИЗ работников</p>
+                    </div>
+                    <div class="banner__inner__last__block">
+                        <svg width="75" height="78" viewBox="0 0 75 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1.36426" y="11.751" width="61.4534" height="64.5946" stroke="#686E79" stroke-width="2"/>
+                            <rect x="12.3047" y="1.7998" width="61.4534" height="64.5946" stroke="#DFDFE0" stroke-width="2"/>
+                            <rect class="change__rect" x="19.6924" y="19.1709" width="36.4674" height="39.0382"/>
+                            </svg>
+                            
+                        <p>Разработка программ по развитию и обучению персонала в области ОТ и ПБ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="slider-mob">
+        <div class="container">
+            <div class=" swiper-container-mob-s1 ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide mob-block-banner">
+                        <img src="./img/mob-banner-img-1.png" alt="banner-img-mob">
+                        <span>Управление охраной труда 
+                            и промышленной безопасностью</span>
+                    </div>
+                    <div class="swiper-slide mob-block-banner">
+                        <img src="./img/mob-banner-img-2.png" alt="banner-img-mob">
+                        <span>Разработка и внедрение нормативных документов в области ОТ и ПБ</span>
+                    </div>
+                    <div class="swiper-slide mob-block-banner">
+                        <img src="./img/mob-banner-img-3.png" alt="banner-img-mob">
+                        <span>Разработка и внедрение систем управления качеством СИЗ работников</span>
+                    </div>
+                    <div class="swiper-slide mob-block-banner">
+                        <img src="./img/mob-banner-img-4.png" alt="banner-img-mob">
+                        <span>Разработка программ по развитию и обучению персонала в области ОТ и ПБ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="info__block">
+            <div class="arrows__bg--anim">
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+            </div>
+            <h2>Кто мы такие? </h2>
+            <div class="info__block__text col-6">
+                <p>Центр изучения и оценки юридических и экономических проблем системы промышленной безопасности и охраны труда <span>(«Центр») работает над созданием безопасного труда в России более 10-ти лет и за это время успел успешно реализовать множество проектов совместно с крупнейшими предприятиями</span></p>
+                <a href="#" class="more">
+                    <span>Узнать больше</span>
+                    <div class="block__go__arrow position-static">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="uslugi">
+        <div class="container">
+            <h2 class="mb-5">Категории наших услуг</h2>
+            <div class="uslugi__inner">
+                <div class="overlay"></div>
+                <div class="uslugi__first">
+                    <div class="uslugi__block">
+                        Управление качеством СИЗ
+                        <div class="open-el">
+                           <h3>Управление<br> качеством СИЗ</h3> 
+                            <a href="#" class="more">
+                                <span>Узнать больше</span>
+                                <div class="block__go__arrow position-static">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="uslugi__block">
+                        Культура безопасности/ диагностика и улучшения действующей системы охраны труда
+                        <div class="open-el">
+                            <h3>Культура безопасности и диагностика</h3> 
+                             <a href="#" class="more">
+                                 <span>Узнать больше</span>
+                                 <div class="block__go__arrow position-static">
+                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                                     </svg>
+                                 </div>
+                             </a>
+                         </div>
+                    </div>
+                </div>
+                <div class="uslugi__second">
+                    <div class="uslugi__block">
+                        Безопасная работа на высоте, в ОЗП
+                        <div class="open-el">
+                            <h3>Безопасная работа на высоте, в ОЗП</h3> 
+                             <a href="#" class="more">
+                                 <span>Узнать больше</span>
+                                 <div class="block__go__arrow position-static">
+                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                                     </svg>
+                                 </div>
+                             </a>
+                         </div>
+                    </div>
+                </div>
+                <div class="uslugi__last">
+                    <div class="uslugi__block">
+                        Семинары-трениги по ОТ и ПБ
+                        <div class="open-el">
+                            <h3>Семинары-трениги<br> по ОТ и ПБ</h3> 
+                             <a href="#" class="more">
+                                 <span>Узнать больше</span>
+                                 <div class="block__go__arrow position-static">
+                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                                     </svg>
+                                 </div>
+                             </a>
+                         </div>
+                    </div>
+                    <div class="uslugi__block">
+                        СУОТ и ПБ
+                        <div class="open-el">
+                            <h3>СУОТ и ПБ</h3> 
+                             <a href="#" class="more">
+                                 <span>Узнать больше</span>
+                                 <div class="block__go__arrow position-static">
+                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                                     </svg>
+                                 </div>
+                             </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uslugi__inner--mob">
+                <div class="uslugi__inner--mob--block">
+                    <span>Управление 
+                        качеством СИЗ</span>
+                </div>
+                <div class="uslugi__inner--mob--block">
+                    <span>Культура безопасности/ диагностика и улучшения действующей системы охраны труда</span>
+                </div>
+                <div class="uslugi__inner--mob--block">
+                    <span>Безопасная работа на высоте, в ОЗП</span>
+                </div>
+                <div class="uslugi__inner--mob--block">
+                    <span>Семинары-трениги по ОТ и ПБ</span>
+                </div>
+                <div class="uslugi__inner--mob--block">
+                    <span>СУОТ и ПБ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/partner-1.png" alt="partner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/partner-2.png" alt="partner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/partner-3.png" alt="partner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/partner-4.png" alt="partner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/partner-5.png" alt="partner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/partner-6.png" alt="partner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/partner-7.png" alt="partner">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="program">
+        <div class="container">
+            <div class="program__inner">
+                <div class="arrows__bg--anim">
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                </div>
+                <div class="program__left">
+                    <h3>Программа совершенствования системы управления ОТ и ПБ, развитие культуры безопасного производства НПО «Энергомаш»</h3>
+                        <p>Центр изучения и оценки юридических и экономических проблем системы промышленной безопасности и охраны труда («Центр»)</p>
+                        <a href="#" class="more">
+                            <span>Смотреть проект</span>
+                            <div class="block__go__arrow position-static">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                <div class="program__right">
+                    <img src="./img/program-img.png" alt="program">
+                    <a class="block__go block__go__program" href="#">
+                        <div class="block__go__arrow">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                            </svg>
+                        </div>
+                        <span>Смотреть
+                            проекты</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sfera">
+        <div class="container">
+            <h2>Сферы нашей деятельности</h2>
+            <div class="sfera__inner">
+                <div class="sfera__item">
+                    <img src="./img/icons/sfera-1.svg" alt="sfera">
+                    <h4>Нефтяная и газовая
+                    <span>промышленность</span></h4>
+                </div>
+                <div class="sfera__item">
+                    <img src="./img/icons/sfera-2.svg" alt="sfera">
+                    <div class="div"><h4>Горнодобывающая
+                        <span>промышленность</span></h4></div>
+                </div>
+                <div class="sfera__item">
+                    <img src="./img/icons/sfera-3.svg" alt="sfera">
+                    <h4>Металлургическая
+                    <span>промышленность</span></h4>
+                </div>
+                <div class="sfera__item">
+                    <img src="./img/icons/sfera-4.svg" alt="sfera">
+                    <h4>Химическая и нефтехим.
+                    <span>промышленность</span></h4>
+                </div>
+                <div class="sfera__item">
+                    <img src="./img/icons/sfera-5.svg" alt="sfera">
+                    <h4>Энергетическая
+                    <span>промышленность</span></h4>
+                </div>
+                <div class="sfera__item">
+                    <img src="./img/icons/sfera-6.svg" alt="sfera">
+                    <h4>Атомно-энергетическая
+                    <span>промышленность</span></h4>
+                </div>
+                <div class="sfera__item">
+                    <img src="./img/icons/sfera-7.svg" alt="sfera">
+                    <h4>Машиностроительная
+                    <span>промышленность</span></h4>
+                </div>
+                <div class="sfera__item">
+                    <img src="./img/icons/sfera-8.svg" alt="sfera">
+                    <h4>Смотреть все отрасли где мы работаем</h4>
+                </div>
+            </div>
+            <div class="sfera__slider__mob">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide sfera__item">
+                        <img src="./img/icons/sfera-1.svg" alt="sfera">
+                        <h4>Нефтяная и газовая
+                            <span>промышленность</span></h4>
+                    </div>
+                    <div class="swiper-slide sfera__item">
+                        <img src="./img/icons/sfera-2.svg" alt="sfera">
+                        <h4>Горнодобывающая
+                            <span>промышленность</span></h4>
+                    </div>
+                    <div class="swiper-slide sfera__item">
+                        <img src="./img/icons/sfera-3.svg" alt="sfera">
+                        <h4>Металлургическая
+                            <span>промышленность</span></h4>
+                    </div>
+                    <div class="swiper-slide sfera__item">
+                        <img src="./img/icons/sfera-4.svg" alt="sfera">
+                        <h4>Химическая и нефтехим.
+                            <span>промышленность</span></h4>
+                    </div>
+                    <div class="swiper-slide sfera__item">
+                        <img src="./img/icons/sfera-5.svg" alt="sfera">
+                        <h4>Энергетическая
+                            <span>промышленность</span></h4>
+                    </div>
+                    <div class="swiper-slide sfera__item">
+                        <img src="./img/icons/sfera-6.svg" alt="sfera">
+                        <h4>Атомно-энергетическая
+                            <span>промышленность</span></h4>
+                    </div>
+                    <div class="swiper-slide sfera__item">
+                        <img src="./img/icons/sfera-7.svg" alt="sfera">
+                        <h4>Машиностроительная
+                            <span>промышленность</span></h4>
+                    </div>
+                    <div class="swiper-slide sfera__item">
+                        <img src="./img/icons/sfera-8.svg" alt="sfera">
+                        <img src="./img/icons/sfera-8.svg" alt="sfera">
+                    <h4>Смотреть все отрасли где мы работаем</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <h2>Горячие новости</h2>
+            <div class="news__inner">
+                    
+                    <div class="main__news col-9">
+                        <h3>Утвержден перечень работ, на которых нельзя работать женщинам</h3>
+                        <p>Центр изучения и оценки юридических и экономических проблем системы промышленной безопасности и охраны труда («Центр»)</p>
+                        <a class="block__go block__go__program" href="#">
+                            <div class="block__go__arrow">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                                </svg>
+                            </div>
+                            <span>Смотреть
+                                новость</span>
+                        </a>
+                    </div>
+                    <div class="swiper-container-s1">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide news-slide">
+                        <div class="news-block first-news">
+                        <h3>Уточнили срок действия документов об оценке соответствия СИЗ</h3>
+                        </div>
+                        <div class="news-block second-news">
+                        <h3>Минздрав назвал самые травмоопасные производства по отраслям и по регионам</h3>
+                        </div>
+                        </div>
+                        <div class="swiper-slide news-slide">
+                        <div class="news-block three-news">
+                        <h3>Стало известно, на каких производствах работники чаще всего болеют раком</h3>
+                        </div>
+                        <div class="news-block four-news">
+                        <h3>Минтруд разрабатывает новые Правила по охране труда при работе на высоте и при погрузочно-разгрузочных работах</h3>
+                        </div>
+                        </div>
+                        
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        </div>
+                        
+                </div>
+            </div>
+    </section>
+    <div class="container mt-5">
+        <div class="info__block">
+            <div class="arrows__bg--anim">
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+                <div class="anim-arrow-item">
+                    <img src="./img/arrow-anim.svg" alt="arrows">
+                </div>
+            </div>
+            <h2>Цели оказания услуг</h2>
+            <div class="info__block__text col-6">
+                <h4>“Описание взято из конкретной услуги”</h4>
+                <p>Организация производственного контроля с целью обеспечения безопасности и (или) безвредности для человека и среды его обитания вредного влияния объектов производственного контроля путем должного выполнения санитарных правил и санитарно-противоэпидемических мероприятий, организации 
+                    и осуществления контроля над их соблюдением.</p>
+                <a href="#" class="more">
+                    <span>Узнать больше</span>
+                    <div class="block__go__arrow position-static">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="team">
+        <div class="container">
+            <div class="team__inner">
+                <div class="team__left">
+                    <div class="arrows__bg--anim">
+                        <div class="anim-arrow-item">
+                            <svg width="156" height="243" viewBox="0 0 156 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b)">
+                                <path d="M104.778 230.569L119.457 226.013C123.255 202.871 135.727 179.309 141.488 170.421L133.849 145.812C125.25 152.268 113.623 165.028 108.884 170.601L57.5572 5.24652L30.7896 13.5553L82.1162 178.91C67.7999 174.266 52.9856 172.49 47.368 172.183L55.1407 197.223C76.8294 204.88 97.2692 222.644 104.778 230.569Z" stroke="#4B4F56"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_b" x="-9.62598" y="-14.626" width="175.543" height="266.944" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                        <div class="anim-arrow-item">
+                            <svg width="156" height="243" viewBox="0 0 156 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b)">
+                                <path d="M104.778 230.569L119.457 226.013C123.255 202.871 135.727 179.309 141.488 170.421L133.849 145.812C125.25 152.268 113.623 165.028 108.884 170.601L57.5572 5.24652L30.7896 13.5553L82.1162 178.91C67.7999 174.266 52.9856 172.49 47.368 172.183L55.1407 197.223C76.8294 204.88 97.2692 222.644 104.778 230.569Z" stroke="#4B4F56"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_b" x="-9.62598" y="-14.626" width="175.543" height="266.944" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                        <div class="anim-arrow-item">
+                            <svg width="156" height="243" viewBox="0 0 156 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b)">
+                                <path d="M104.778 230.569L119.457 226.013C123.255 202.871 135.727 179.309 141.488 170.421L133.849 145.812C125.25 152.268 113.623 165.028 108.884 170.601L57.5572 5.24652L30.7896 13.5553L82.1162 178.91C67.7999 174.266 52.9856 172.49 47.368 172.183L55.1407 197.223C76.8294 204.88 97.2692 222.644 104.778 230.569Z" stroke="#4B4F56"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_b" x="-9.62598" y="-14.626" width="175.543" height="266.944" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                        <div class="anim-arrow-item">
+                            <svg width="156" height="243" viewBox="0 0 156 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b)">
+                                <path d="M104.778 230.569L119.457 226.013C123.255 202.871 135.727 179.309 141.488 170.421L133.849 145.812C125.25 152.268 113.623 165.028 108.884 170.601L57.5572 5.24652L30.7896 13.5553L82.1162 178.91C67.7999 174.266 52.9856 172.49 47.368 172.183L55.1407 197.223C76.8294 204.88 97.2692 222.644 104.778 230.569Z" stroke="#4B4F56"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_b" x="-9.62598" y="-14.626" width="175.543" height="266.944" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                        <div class="anim-arrow-item">
+                            <svg width="156" height="243" viewBox="0 0 156 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b)">
+                                <path d="M104.778 230.569L119.457 226.013C123.255 202.871 135.727 179.309 141.488 170.421L133.849 145.812C125.25 152.268 113.623 165.028 108.884 170.601L57.5572 5.24652L30.7896 13.5553L82.1162 178.91C67.7999 174.266 52.9856 172.49 47.368 172.183L55.1407 197.223C76.8294 204.88 97.2692 222.644 104.778 230.569Z" stroke="#4B4F56"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_b" x="-9.62598" y="-14.626" width="175.543" height="266.944" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                        <div class="anim-arrow-item">
+                            <svg width="156" height="243" viewBox="0 0 156 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b)">
+                                <path d="M104.778 230.569L119.457 226.013C123.255 202.871 135.727 179.309 141.488 170.421L133.849 145.812C125.25 152.268 113.623 165.028 108.884 170.601L57.5572 5.24652L30.7896 13.5553L82.1162 178.91C67.7999 174.266 52.9856 172.49 47.368 172.183L55.1407 197.223C76.8294 204.88 97.2692 222.644 104.778 230.569Z" stroke="#4B4F56"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_b" x="-9.62598" y="-14.626" width="175.543" height="266.944" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                        <div class="anim-arrow-item">
+                            <svg width="156" height="243" viewBox="0 0 156 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b)">
+                                <path d="M104.778 230.569L119.457 226.013C123.255 202.871 135.727 179.309 141.488 170.421L133.849 145.812C125.25 152.268 113.623 165.028 108.884 170.601L57.5572 5.24652L30.7896 13.5553L82.1162 178.91C67.7999 174.266 52.9856 172.49 47.368 172.183L55.1407 197.223C76.8294 204.88 97.2692 222.644 104.778 230.569Z" stroke="#4B4F56"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_b" x="-9.62598" y="-14.626" width="175.543" height="266.944" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                        <div class="anim-arrow-item">
+                            <svg width="156" height="243" viewBox="0 0 156 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b)">
+                                <path d="M104.778 230.569L119.457 226.013C123.255 202.871 135.727 179.309 141.488 170.421L133.849 145.812C125.25 152.268 113.623 165.028 108.884 170.601L57.5572 5.24652L30.7896 13.5553L82.1162 178.91C67.7999 174.266 52.9856 172.49 47.368 172.183L55.1407 197.223C76.8294 204.88 97.2692 222.644 104.778 230.569Z" stroke="#4B4F56"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_b" x="-9.62598" y="-14.626" width="175.543" height="266.944" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                        <div class="anim-arrow-item">
+                            <svg width="156" height="243" viewBox="0 0 156 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b)">
+                                <path d="M104.778 230.569L119.457 226.013C123.255 202.871 135.727 179.309 141.488 170.421L133.849 145.812C125.25 152.268 113.623 165.028 108.884 170.601L57.5572 5.24652L30.7896 13.5553L82.1162 178.91C67.7999 174.266 52.9856 172.49 47.368 172.183L55.1407 197.223C76.8294 204.88 97.2692 222.644 104.778 230.569Z" stroke="#4B4F56"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_b" x="-9.62598" y="-14.626" width="175.543" height="266.944" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                    </div>
+                    <div class="team__select">
+                        <div class="team__select__left">
+                            <h4>Safety Consulting</h4>
+                            <div class="team__select__click">
+                                <span>Команда</span>
+                                <div class="block__go__arrow team__select__arrow active">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__select__right">
+                           
+                                <h4>Яременко Василий 
+                                    Васильевич</h4>
+                                <div class="team__select__click">
+                                    <span>Директор</span>
+                                    <div class="block__go__arrow team__select__arrow">
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="team__left__text">
+                        <h3>Команда<br>
+                            <span>Safety Consulting</span>
+                        </h3>
+                        <p>Центр изучения и оценки юридических и экономических проблем системы промышленной безопасности и охраны труда («Центр») работает над созданием безопасного труда в России более 10-ти лет и за это время успел успешно реализовать множество проектов совместно с крупнейшими предприятиями</p>
+                    </div>
+                </div>
+               <div class="team__right">
+                <a class="block__go" href="#">
+                    <div class="block__go__arrow">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                        </svg>
+                    </div>
+                    <span>Другое фото</span>
+                </a>
+                   <img src="./img/team-2.png" alt="team" class="change__img">
+               </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe__inner">
+                <div class="arrows__bg--anim">
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                    <div class="anim-arrow-item">
+                        <img src="./img/arrow-anim.svg" alt="arrows">
+                    </div>
+                </div>
+                <h2>Записаться на консультацию</h2>
+                <div class="subscribe__wrap">
+                    <div class="subscribe__column">
+                        <div class="subscribe__row">
+                            <h4>Режим работы</h4>
+                            <p>Понедельник—пятника — с 08:00 до 16:00</p>
+                            <p>Суббота и воскресенье — выходные</p>
+                        </div>
+                        <div class="subscribe__row">
+                            <h4>Адрес компании</h4>
+                            <p>Краснопресненская наб., 12, Центр<br> Международной торговли, под. 6, офис<br> 420 Москва 123610</p>
+                        </div>
+                    </div>
+                    <div class="subscribe__column">
+                        <div class="subscribe__row">
+                            <h4>Телефон:</h4>
+                            <a href="tel:+7 (495) 223-70-51">+7 (495) 223-70-51</a>
+                        </div>
+                        <div class="subscribe__row">
+                            <h4>Почта</h4>
+                           <a href="mailto:info@safety-consult">info@safety-consult</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d561.3023038715099!2d37.556722329260204!3d55.75486775347083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bd1ba2714cd%3A0x13359c92ea15adc3!2z0JrRgNCw0YHQvdC-0L_RgNC10YHQvdC10L3RgdC60LDRjyDQvdCw0LEuLCAxMiwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyMzYxMA!5e0!3m2!1sru!2sby!4v1626530156382!5m2!1sru!2sby" width="100%" height="400" style="border: none;" allowfullscreen="true" loading="lazy"></iframe>
+                    <a class="block__go block__go__map" href="https://yandex.by/maps/213/moscow/house/krasnopresnenskaya_naberezhnaya_12/Z04YcwJmSk0PQFtvfXt0dX5jZw==/?ll=37.556388%2C55.754203&utm_source=main_stripe_big&z=17.09">
+                        <div class="block__go__arrow">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.0353 4.71421C24.0353 4.3 23.6995 3.96422 23.2853 3.96421L16.5353 3.96422C16.1211 3.96422 15.7853 4.3 15.7853 4.71422C15.7853 5.12843 16.1211 5.46421 16.5353 5.46422L22.5353 5.46421L22.5353 11.4642C22.5353 11.8784 22.8711 12.2142 23.2853 12.2142C23.6995 12.2142 24.0353 11.8784 24.0353 11.4642L24.0353 4.71421ZM5.2442 23.816L23.8156 5.24455L22.755 4.18389L4.18354 22.7553L5.2442 23.816Z"/>
+                            </svg>
+                        </div>
+                        <span>Смотреть
+                            на карте</span>
+                    </a>
+                </div>
+        </div>
+    </section>
+    <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="footer__left__wrap">
+                        <img src="./img/icons/logo-white.svg" alt="logo-white">
+                        <a href="tel:+7 (495) 223-70-51">+7 (495) 223-70-51</a>
+                        <p>Краснопресненская наб., 12, Центр<br> Международной торговли, под. 6, офис 420</p>
+                </div>
+                </div>
+               <div class="footer__right">
+                    <div class="footer__right__first">
+                       <nav class="footer__right__nav">
+                            <a href="#">Главная</a>
+                            <a href="#">Проекты </a>
+                            <a href="#">О нас </a>
+                            <a href="#">Услуги</a>
+                            <a href="#">Документы </a>
+                            <a href="#">Новости</a>
+                            <a href="#">Контакты</a>
+                       </nav>
+                       <span>Safety Consult © 2021</span>
+                    </div>
+                    <div class="footer__right__last">
+                        <div class="footer__right__btns">
+                            <a href="#">
+                                <img src="./img/icons/join-white.svg" alt="join-white">
+                                <span>Войти</span>
+                            </a>
+                            <a href="#">
+                                <img src="./img/icons/search-white.svg" alt="search-white">
+                                <span>Поиск</span>
+                            </a>
+                        </div>
+                        <a href="mailto:info@safety-consult.ru" class="footer__mail">info@safety-consult.ru</a>
+                    </div>
+            </div>
+            </div>
+    </footer>
+    <script src="./js/anime.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
